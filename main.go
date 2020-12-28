@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject/router"
+	"golang-boilerplate/router"
 )
 
 func main() {

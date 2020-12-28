@@ -6,10 +6,6 @@ import (
 )
 
 func initializeRouterA(router *gin.Engine) *gin.Engine {
-	router.Use(gin.Logger())
-	router.Use(gin.Recovery())
-
-
 	router.GET("pong", func(context *gin.Context) {
 		context.JSON(http.StatusOK, gin.H{"message": "pong"})
 	})

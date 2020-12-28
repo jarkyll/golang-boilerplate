@@ -1,4 +1,4 @@
-module awesomeProject
+module golang-boilerplate
 
 go 1.15
 
