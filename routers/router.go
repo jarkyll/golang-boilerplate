@@ -1,4 +1,4 @@
-package router
+package routers
 
 import (
 	"github.com/gin-gonic/gin"
@@ -17,6 +17,8 @@ func NewRouter() *gin.Engine {
 
 	router = initializeRouterA(router)
 	router = initializeRouterB(router)
+	router = InitializeAuthenticationRoutes(router)
+
 	return router
 
 }
